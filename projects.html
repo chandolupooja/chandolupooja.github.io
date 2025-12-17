@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Pooja Chandolu</title>
+  <title>Projects - Pooja Chandolu</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     :root { --primary:#0b3c49; }
     .navbar-dark.bg-dark { background-color: var(--primary) !important; }
+    .card { border-radius:16px; }
   </style>
 </head>
 <body style="background:#f2f6f8;">
@@ -18,28 +19,69 @@
     <ul class="navbar-nav ms-auto">
       <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-      <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
   </div>
 </nav>
 
-<div class="container mt-5 text-center">
-  <h1>Get in Touch</h1>
-  <p class="lead">
-    Interested in collaborating or learning more about my work?
-    Feel free to reach out.
-  </p>
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Projects & Experience</h1>
 
-  <p><strong>Email:</strong> chandolupooja@gmail.com</p>
-  <p><strong>LinkedIn:</strong>
-    <a href="https://www.linkedin.com" target="_blank">linkedin.com/in/pooja-chandolu</a>
-  </p>
+  <div class="row">
 
-  <p>
-    I’m open to opportunities involving <strong>network engineering</strong>,
-    <strong>cybersecurity</strong>, and <strong>enterprise infrastructure</strong>.
-  </p>
+    <div class="col-md-4 mb-4" id="firewall">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Enterprise Firewall Engineering</h5>
+          <p>
+            Designed, implemented, and maintained Fortinet and Palo Alto firewall
+            environments supporting enterprise and customer networks.
+          </p>
+          <ul>
+            <li>Policy design, threat prevention, VPNs</li>
+            <li>Firmware upgrades and vulnerability remediation</li>
+            <li>Incident response and root cause analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4" id="f5">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">F5 Load Balancing & ADC</h5>
+          <p>
+            Subject Matter Expert for F5 LTM across multiple data centers,
+            ensuring application availability and performance.
+          </p>
+          <ul>
+            <li>Traffic management & SSL offloading</li>
+            <li>Application fault tolerance</li>
+            <li>$625K cost savings over 3 years</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4" id="iam">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Authentication & Access Control</h5>
+          <p>
+            Architected secure authentication solutions for enterprise and
+            distributed networks.
+          </p>
+          <ul>
+            <li>Cisco ISE, OpenLDAP, RADIUS, RSA MFA</li>
+            <li>Multi-datacenter redundancy & DR</li>
+            <li>TACACS & role-based access control</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <footer class="bg-dark text-white text-center py-3 mt-5">
